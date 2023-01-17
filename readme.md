@@ -14,7 +14,7 @@ diagonal: (0,0),(1,1),(2,2) / (2,0),(1,1),(0,2)
 
 A set of 3 Xs or Os in any of these sequences constitutes a win.
 
-**tie condition**: No winners and no open spots left.
+**Tie condition**: No winners and no open spots left.
  
 
 
