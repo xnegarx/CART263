@@ -1,4 +1,4 @@
-## Exercise 1
+# Exercise 1
 ## CART 263
 ## Negar Roofigari
 
