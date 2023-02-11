@@ -69,8 +69,7 @@ function mousePressed() {
 
 // any 3 Xs or Os anywhere on the grid are seen as potential wins.
 function potentialWin(a, b, c) {
-  return a == b && b == c && a != '';
-  
+  return a == b && b == c && a != '';  
 }
 
 // to see if there are any winners, we examine the potential wins.
@@ -122,7 +121,7 @@ Description of draw()
 */
 
 function draw() {
-  
+  background(255);
 // keeping the score 
 
     fill(255, 50, 0);
@@ -130,11 +129,6 @@ function draw() {
 
     fill(0, 50, 255);
     text(pBscore, 410, 400);
-
-  
-
-    
-   //background(252, 245, 95);
 
 // the two parallel lines
    line(width/3, 0, width/3, width);
@@ -166,7 +160,6 @@ function draw() {
         
             }
 
-
         }
         
     } 
@@ -188,9 +181,8 @@ function draw() {
   // when there is a winner display 'X wins!' or 'O wins!' 
         } else {   
           resultP.html(`${result} wins!`);
-  // increase the score of the winner
-  
         }
+  // increase the score of the winner
             if (result == playerA) { 
               console.log("X won");
               pAscore += 1;
