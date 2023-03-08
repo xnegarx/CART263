@@ -5,7 +5,6 @@ In this particular dataset, the average is crucial, and my idea was to show this
 ## Explanation:
 To explain the visualization, the petal lengths are divided into three classes: Setosa, Versicolor, and Virginica. Each flower has a center (centerX, centerY) from which the scaled length of the petals (radii) are drawn.  If let's say the petal lengths are: 1.3, 1.5, 3 and a circle of diameter 1 represents the petal itself. 3 circles are being drawn on points 1.3, 1.5, and 3, representing different radii. The overlap of the circles at points 1.3 and 1.5 is made obvious by the opacity, indicating that the concentration of petals close to that length is higher. The opacity also helps to discover the second highest concentration point, the third, in other words, the more probable lengths. The data is then repeated a set number of times to surround the whole circle and give a flowery look.
 the equation for x and y of the circles is based on the trigonometric formulas: x=rcos() y=rsin()
-
                                                          
 (math.jpg)
 
@@ -23,6 +22,7 @@ I initially wanted to use the petal width data as well as the length data, then 
 ## Remarks:
 I was told that the visualization had to be on theme with the data and I put effort into matching the two in this project hence why I'm repeating the datapoint multiple times to show the data as flowers. However, since then I've seen other students work, and I don't think it needed to be. 
 Message: comparison
+
 I think the message of any data visualization is comparison, and the key is to convey the data in a clever and artistic way.
 
 gradient tutorial: 
