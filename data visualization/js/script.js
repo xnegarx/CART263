@@ -86,7 +86,7 @@ function setup() {
   offset_VirginicaSlider.position(50, 500);
 
 // the parseFloat() function is used to convert the string values from the table to floating-point numbers like x & y 
-  for (var r = 0; r < table.getRowCount(); r++) { // cycle through each row of the table
+  for (var r = 0; r < table.getRowCount(); r++) { // cycle through each row of the table in the first 5 columns
     data[r] = new DataPoint(
       table.getString(r, 0),
       parseFloat(table.getString(r, 1)),
@@ -96,11 +96,6 @@ function setup() {
       table.getString(r, 5)
     );
   }
-
-  //console.log(table);
-  console.log(table.getRowCount() + " total rows in table");
-  console.log(table.getColumnCount() + " total columns in table");
-
 }
 
 
@@ -108,7 +103,7 @@ function draw() {
   background(0); // black background
   fill(0, 0, 100); // white 
 
-  // set the sliders and add their names below them
+  // set the sliders and add their names and positions below them
   scale_global = scaleSlider.value();
   text("scale:" + scale_global, 60, 650);
 
